@@ -1,0 +1,46 @@
+安装git客户端：（google单击操作无反应，换IE，浏览器兼容问题）
+
+
+
+
+公钥：
+
+ssh-keygen -t rsa -C "zzslyvia@163.com"
+
+
+
+
+复制公钥到github的配置中：
+$ cat id_rsa.pub
+
+
+变量：
+git config --global user.name 'zzslyvia'
+git config --global user.email 'zzslyvia@163.com'
+
+git config --global user.email
+git config --global user.name
+
+$ echo "# Testauto" >> README.md
+$ git init
+$ git add README.md
+$ git commit -m "first commit"
+
+$ git push -u origin master
+$ git remote add origin git@github.com:zzslyvia/Testauto.git
+
+删除远程 Git 仓库
+$ git remote rm origin
+
+克隆线上项目
+git clone git@github.com:zzslyvia/Python.git
+
+本地添加项目文件
+
+$ git add .
+$ git commit -m "first commit"
+$ git push 
+
+
+
+
